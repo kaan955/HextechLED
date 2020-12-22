@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.view.activity.MainActivity">
+
+    <Switch
+        android:id="@+id/pin1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:text="PIN1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.33999997" />
+
+    <Switch
+        android:id="@+id/pin2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:clickable="false"
+        android:text="PIN2"
+        app:layout_constraintEnd_toEndOf="@+id/pin1"
+        app:layout_constraintStart_toStartOf="@+id/pin1"
+        app:layout_constraintTop_toBottomOf="@+id/pin1" />
+
+    <Switch
+        android:id="@+id/pin3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:clickable="false"
+        android:text="PIN3"
+        app:layout_constraintEnd_toEndOf="@+id/pin1"
+        app:layout_constraintStart_toStartOf="@+id/pin1"
+        app:layout_constraintTop_toBottomOf="@+id/pin2" />
+
+    <Switch
+        android:id="@+id/pin4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:clickable="false"
+        android:text="PIN4"
+        app:layout_constraintEnd_toEndOf="@+id/pin1"
+        app:layout_constraintStart_toStartOf="@+id/pin1"
+        app:layout_constraintTop_toBottomOf="@+id/pin3" />
+</androidx.constraintlayout.widget.ConstraintLayout>
